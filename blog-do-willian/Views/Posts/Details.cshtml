@@ -1,0 +1,20 @@
+﻿@model blog_do_willian.Models.Post
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div class="form-group">
+    @Html.LabelFor(p => p.Title)
+    <div>@Model.Title</div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(p => p.DataAdded) | @Html.LabelFor(p => p.DataUpdate)
+    <div>@Model.DataAdded | @Model.DataUpdate</div>
+</div>
+<div>
+    @Html.LabelFor(p => p.PostingBody)
+    <div>@Model.PostingBody</div>
+</div>
+
